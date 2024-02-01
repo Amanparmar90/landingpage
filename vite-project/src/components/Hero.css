@@ -1,0 +1,107 @@
+/* Hero.css */
+
+.container {
+  max-width: 800px;
+  margin: 5% auto; /* Adjusted margin for better centering */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 65vh;
+}
+
+.text-white {
+  color: #fff;
+  margin-top: -12%;
+}
+
+.greenText {
+  font-size: 30px;
+  color: white;
+  font-weight: 400; /* Removed 'px' from '400px' */
+  padding: 2px;
+}
+
+.financingText {
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: -3%;
+  padding-bottom: 2rem;
+}
+
+.typedText {
+  font-size: 45px;
+  font-weight: 400;
+  padding-left: 0.5rem;
+  color: #FFC700;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.searchBar {
+  width: 100%;
+  /* max-width: 600px; Adjusted max-width for better responsiveness */
+  height: 3vh;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  background-color: black; /* Set background color to black */
+}
+
+.searchBar::placeholder {
+  color: #fff; /* Set placeholder text color to white */
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -7rem;
+  margin-left: 40px; /* Adjusted margin for better spacing on small screens */
+  margin-right: -50px; /* Adjusted margin for better spacing on small screens */
+}
+
+
+.images-container img {
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.img1 {
+  width: 300px; /* Adjusted width for better responsiveness on small screens */
+  height: 70px; /* Maintain aspect ratio */
+  margin-right: 20px; /* Adjusted margin for spacing between images */
+  margin-bottom: 1rem;
+}
+
+.img2 {
+  padding-left: 150px;
+  width: 920px; /* Adjusted width for better responsiveness on small screens */
+  height: 166px; /* Maintain aspect ratio */
+  margin-right: 20px; /* Adjusted margin for spacing between images */
+  margin-bottom: 1rem;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 767px) {
+  .images-container {
+    margin-left: 10px; /* Adjusted margin for better spacing on small screens */
+    margin-right: -10px; /* Adjusted margin for better spacing on small screens */
+  }
+
+  .img1,
+  .img2 {
+    width: 100%; /* Full width for small screens */
+    max-width: none; /* Remove max-width for small screens */
+    margin-right: 0; /* Remove margin-right for small screens */
+    margin-bottom: 1rem;
+  }
+}
